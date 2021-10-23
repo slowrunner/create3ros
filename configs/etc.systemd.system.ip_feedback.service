@@ -1,0 +1,13 @@
+[Unit]
+Description=IP Feedback on Boot
+After=syslog.target network.target novc.service
+
+
+[Service]
+Type=simple
+user=ubuntu
+WorkingDirectory=/home/ubuntu/create3ros
+ExecStart=/bin/bash /home/ubuntu/create3ros/ip_feedback.sh
+
+[Install]
+WantedBy=multi-user.target
