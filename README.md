@@ -1,4 +1,4 @@
-# rosbot-on-gopigo3
+# create3ros
 Autonomous ROS2 home robot based on an iRobot CREATE 3, Ubuntu, Raspberry Pi 3B
 
 
