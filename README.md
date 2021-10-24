@@ -2,10 +2,10 @@
 Autonomous ROS2 home robot based on an iRobot CREATE 3, Ubuntu, Raspberry Pi 3B
 
 
-<img src="https://github.com/slowrunner/create3ros/blob/main/Kevin.jpg" width="378" height="504" />
+<img src="https://github.com/slowrunner/create3ros/blob/main/TBD_Name.jpg" width="378" height="504" />
 
 
-"Kevin" Specs:
+"TBD Name" Specs:
 
 - Platform: Create 3 from iRobot 
 
@@ -19,12 +19,20 @@ Autonomous ROS2 home robot based on an iRobot CREATE 3, Ubuntu, Raspberry Pi 3B
 - ROS2 Foxy: Uses 100% of one core (uptime 15min load 1.0)
  
 - Control Interfaces: 
-  * ssh over WiFi
-  * ROS2 Foxy 
+  * ssh over WiFi to RPi3B
+  * ROS2 over WiFi 
+  * Bluetooth LE (unused)
 
 - Sensors (iRobot Create 3 Intrinsic)
-  * Battery_Voltage
-  * Wheel Encoders 508.8 cnt/rev 0.444 mm/tick
+  * Power Button State
+  * 2x User Button State
+  * 2x Front Bumper Zone
+  * 4x IR Cliff Sensors
+  * 6x IR Obstacle Sensors
+  * Downward Optical Flow Sensor (for odometry)
+  * IMU (6DOF: 3D gyros, 3D accelerometers)
+  * "Battery Level"
+  * Left/Right Wheel Encoders 508.8 cnt/rev 0.444 mm/tick
 
 - Sensors (Raspberry Pi Intrinsic)  
   * Processor Temperature 
@@ -32,18 +40,19 @@ Autonomous ROS2 home robot based on an iRobot CREATE 3, Ubuntu, Raspberry Pi 3B
   * Processor Temperature Throttling Active / Latched
   
 - Sensors (Added):
-  * Oak-D-Lite
+  * Expect Dec 2021: Oak-D-Lite
   
 - Actuators/Effectors (iRobot Create 3 Intrinsic)
-  * Wheel Motors
+  * Left/Right Drive Motors
   * Multi-color programmable LED (x6)
+  * Variable Frequency Buzzer
 
-- Actuators/Effectors 
-  * Audio speaker
-  
+- Actuators/Effectors (available via RPi):
+  * Audio Speaker
+
 - iRobot Create 3 Port Usage
-  * Unfiltered Power (2A 14v nominal)
-  * USB 
+  * Payload Power (2A unregulated 14.4v nominal)
+  * USB-C: Ethernet over USB, Raspberry Pi3B 5v power 
 
 - Power Source: iRobot 26Wh Rechargeable Battery
   * Roughly x hours playtime
@@ -54,7 +63,7 @@ Autonomous ROS2 home robot based on an iRobot CREATE 3, Ubuntu, Raspberry Pi 3B
   * "100% wandering" TBD hours
 
 - Recharger:  
-  * iRobot Docking Station
+  * iRobot Home Base Station Dock
   * x.x v nA output 
 
 - Create3 Physical:
