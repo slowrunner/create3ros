@@ -15,3 +15,6 @@ Check that pigpio daemon is running:  ps aux | grep pigpiod
 Kill the daemon: sudo killall pigpiod
 
 
+2021-10-24: Tests 5.4 and 5.11 FAIL, all others PASS
+  similar issue reported on Pi3B 
+
