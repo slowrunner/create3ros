@@ -24,7 +24,7 @@ Autonomous ROS2 home robot based on an iRobot CREATE 3, Ubuntu, Raspberry Pi 3B
 
 - Sensors (iRobot Create 3 Intrinsic)
   * Battery_Voltage
-  * Wheel Encoders x cnt/rev
+  * Wheel Encoders 508.8 cnt/rev 0.444 mm/tick
 
 - Sensors (Raspberry Pi Intrinsic)  
   * Processor Temperature 
@@ -57,9 +57,12 @@ Autonomous ROS2 home robot based on an iRobot CREATE 3, Ubuntu, Raspberry Pi 3B
   * iRobot Docking Station
   * x.x v nA output 
 
-- Physical:
-  * x lbs Total
-  * x" Dia x 12" High
+- Create3 Physical:
+  * 7.7 lbs (3.5kg) 
+  * approx 13.75" (350mm) Dia x 3.63" (92 cm) High 
+  * 9.25" (23.5 cm) wheel base
+  * 2.83" (72 mm) wheel diameter
+  * 226.19 mm wheel circumference
 
 - Total Cost: $xxx
 
