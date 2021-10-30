@@ -52,3 +52,9 @@ CATKIN_IGNORE
 
 # Alan
 *.log
+create3_examples_ws/src
+tmp/
+ip.number
+ipcount
+install/
+log/

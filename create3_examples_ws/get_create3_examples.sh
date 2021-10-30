@@ -1,9 +1,8 @@
 #/bin/bash
 
 echo "INITIAL CREATE3 EXAMPLES SETUP"
-echo "Creating create3_examples_ws"
-cd ~/create3ros
-mkdir -p create3_examples_ws/src
+echo "Creating create3_examples_ws/src"
+mkdir -p ~/create3ros/create3_examples_ws/src
 
 echo "Cloning create3 example repo to create3_examples_ws/src"
 cd ~/create3ros/create3_examples_ws/src
